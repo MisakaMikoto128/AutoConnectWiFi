@@ -12,13 +12,7 @@
 
 1. 克隆代码库或下载脚本文件。
     
-2. 打开`script.py`文件，将以下变量值替换为您要连接的WiFi网络的实际值：
-    
-    `# 指定WiFi网络的SSID和密码 wifi_ssid = "Your_WiFi_SSID" wifi_password = "Your_WiFi_Password"`
-    
-3. 保存并关闭脚本文件。
-    
-4. 以root权限运行`setup.sh`脚本，使用以下命令：
+2. 以root权限运行`setup.sh`脚本，使用以下命令：
     
     `sudo bash setup.sh  <SSID> <password>`
     
@@ -26,7 +20,7 @@
     
     注意：`setup.sh`脚本适用于基于SysV的Linux发行版（如Ubuntu 14.04及更早版本）。如果您使用的是其他类型的启动管理器（如systemd），则需要根据相应的配置进行适当的修改。
     
-5. 完成以上步骤后，当您的Linux计算机启动时，脚本将自动执行并尝试连接到指定的WiFi网络。
+3. 完成以上步骤后，当您的Linux计算机启动时，脚本将自动执行并尝试连接到指定的WiFi网络。
     
 
 ## 注意事项
@@ -46,7 +40,7 @@
     
 - 要检查是否已启动脚本，你可以使用以下命令来查看正在运行的进程列表，看是否存在与你的脚本相关的进程：
 
-    `ps aux | grep script.py`
+    `ps aux | grep auto_connect_wifi_script.py`
 
     该命令将显示与 script.py 相关的进程列表。如果脚本正在运行，则会显示匹配的进程。
 
